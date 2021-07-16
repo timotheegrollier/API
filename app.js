@@ -1,8 +1,8 @@
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
-require('./models/dbConfig')
-const postsRoutes = require("./routes/postsController");
+require('/models/dbConfig')
+const postsRoutes = require("/routes/postsController");
 const mongoose = require("mongoose");
 const cors = require('cors');
 
