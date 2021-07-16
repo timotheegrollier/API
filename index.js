@@ -12,4 +12,4 @@ mongoose.set('useFindAndModify',false);
 app.use(cors());
 app.use(bodyParser.json());
 app.use('/posts',postsRoutes);
-app.listen(5500,()=> console.log("Server started: 5500"));
+app.listen(process.env.PORT, process.env.IP,()=> console.log("Server started: 5500"));
